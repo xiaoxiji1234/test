@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/utils.js"></script>
+</head>
+
+<body>
+    <script>
+        pAjax({
+            url: '../api/addUser.php',
+            type: 'post',
+            data: {
+                username: 'xiao',
+                password: '12345678',
+                tel: '13574687542'
+            }
+        }).then(function(res) {
+            console.log(res);
+        })
+    </script>
+</body>
+
+</html>
